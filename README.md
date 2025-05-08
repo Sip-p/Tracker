@@ -28,13 +28,11 @@ https://react-crypto-tkr.web.app/
 ### Installation
 
 ```
-git clone https://github.com/hourmeng12/crypto-tracker
-
+git clone https://github.com/Sip-p/Tracker
 npm install
 
 npm start / npm run build
 ```
 
 ### Meta
-
-Hourmeng Khy
+Sip-p
