@@ -8,7 +8,7 @@ export const cryptoApi = createApi({
   endpoints: (builder) => ({
     getCryptoMarket: builder.query({
       query: (page) =>
-        `coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=${page}&sparkline=false&price_change_percentage=1h%2C24h%2C7d`,
+        `coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=${page}&sparkline=true&price_change_percentage=1h%2C24h%2C7d`,
     }),
     getGlobalData: builder.query({
       query: () => `global`,

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Sparklines, SparklinesLine } from 'react-sparklines';
+
 import {
   Table,
   Thead,
@@ -42,6 +44,8 @@ const CryptoList = ({ cryptos, isFetching }) => {
             <Th isNumeric>Market Cap</Th>
             <Th isNumeric>Volume(24h)</Th>
             <Th isNumeric>Circulating Supply</Th>
+            <Th isNumeric>Last 7 Days</Th>
+
           </Tr>
         </Thead>
         <Tbody>
@@ -220,6 +224,18 @@ const CryptoList = ({ cryptos, isFetching }) => {
                     )}
                   </Skeleton>
                 </Td>
+                <Td isNumeric>
+  <Skeleton isLoaded={!isFetching} borderRadius="md">
+    {crypto?.sparkline_in_7d?.price?.length ? (
+      <Sparklines data={crypto.sparkline_in_7d.price} width={100} height={20} margin={5}>
+        <SparklinesLine color={crypto.sparkline_in_7d.price[0] < crypto.sparkline_in_7d.price.at(-1) ? 'green' : 'red'} />
+      </Sparklines>
+    ) : (
+      <Text>?</Text>
+    )}
+  </Skeleton>
+</Td>
+
               </Tr>
             );
           })}
