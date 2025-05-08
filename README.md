@@ -11,8 +11,9 @@ https://gentle-dusk-21922c.netlify.app/
 
 ### Screenshots
 
-<img src="https://imgur.com/8OhZvah.jpg" style="max-width: 100px; width: 100%; height: auto;">
-<img src="https://imgur.com/9SB778T.jpg" style="max-width: 100px; width: 100%; height: auto;">
+<img src="public/img1.png" style="max-width: 100px; width: 100%; height: auto;">
+<img src="public/img2.png" style="max-width: 100px; width: 100%; height: auto;">
+
 <img src="https://imgur.com/PSJGQS5.jpg" style="max-width: 100px; width: 100%; height: auto;">
 <img src="https://imgur.com/esvlq3N.jpg" style="max-width: 100px; width: 100%; height: auto;">
 <img src="https://imgur.com/PpFiovC.jpg" style="max-width: 100px; width: 100%; height: auto;">
